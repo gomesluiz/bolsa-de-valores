@@ -41,4 +41,17 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+        <id>oss.sonatype.org</id>
+        <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/gomesluiz/bolsa-de-valores-starter</url>
+    </snapshotRepository>
+</distributionManagement>
+
 </project>
