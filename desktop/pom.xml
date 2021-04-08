@@ -10,6 +10,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <!-- insert -->
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
   </properties>
@@ -35,10 +36,13 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <!-- modify -->
         <artifactId>maven-assembly-plugin</artifactId>
+        <!-- remove 
         <configuration>
           <release>11</release>
         </configuration>
+        -->
         <executions>
           <execution>
             <phase>package</phase>
@@ -51,16 +55,18 @@
                   <mainClass>App</mainClass>
                 </manifest>
               </archive>
+              <!--
               <descriptorRefs>
                 <descriptorRef>jar-with-dependencies</descriptorRef>
               </descriptorRefs>
+              -->
             </configuration>
           </execution>
         </executions>
       </plugin>
     </plugins>
   </build>
-
+  <!--
   <distributionManagement>
     <repository>
       <id>oss.sonatype.org</id>
@@ -72,5 +78,5 @@
       <url>https://maven.pkg.github.com/gomesluiz/bolsa-de-valores-starter</url>
     </snapshotRepository>
   </distributionManagement>
-
+  -->
 </project>
