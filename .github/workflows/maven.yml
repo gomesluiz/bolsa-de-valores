@@ -39,9 +39,3 @@ jobs:
             mvn --batch-mode deploy --file desktop/pom.xml -DskipTests
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        - run: mvn -B package --file desktop/pom.xml -DskipTests
-#        - run: mkdir staging && cp desktop/target/*jar-with-dependencies.jar staging
-#        - uses: actions/upload-artifact@v2
-#          with:
-#            name: Package
-#            path: staging
