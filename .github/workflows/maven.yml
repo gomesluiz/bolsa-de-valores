@@ -29,12 +29,12 @@ jobs:
       needs: [build_and_test]
       steps:
         - uses: actions/checkout@v2
-        - uses: actions/setup-java@v1
+        - uses: actions/setup-java@v2
           with:
             java-version: 11
         - run: mvn -B package --file desktop/pom.xml -DskipTests
         - run: mkdir staging && cp desktop/target/*jar-with-dependencies.jar staging
-        - uses: actions/upload-artifact@v1
+        - uses: actions/upload-artifact@v2
           with:
             name: Package
             path: staging
