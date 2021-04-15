@@ -34,7 +34,7 @@ jobs:
             java-version: 11
             distribution: 'adopt'
         - name: Publish package
-          run: mvn --batch-mode deploy
+          run: mvn --batch-mode deploy --file desktop/pom.xml -DskipTests
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #        - run: mvn -B package --file desktop/pom.xml -DskipTests
