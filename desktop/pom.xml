@@ -65,7 +65,7 @@
     </plugins>
   </build>
 
-  
+  <!--
   <distributionManagement>
     <repository>
       <id>github</id>
@@ -74,7 +74,7 @@
     </repository>
   </distributionManagement>
 
-  <!--
+  
   <distributionManagement>
     <repository>
       <id>oss.sonatype.org</id>
