@@ -33,6 +33,10 @@ jobs:
           with:
             java-version: 11
             distribution: 'adopt'
+        - name: Configure Git user
+          run: |
+            git config user.email "gomes.luiz@gmai.com"
+            git config user.name "Luiz Alberto"
         - name: Deploy Release
           run: |
             #mvn -B versions:set -DnewVersion=$GITHUB_SHA -DgenerateBackupPoms=false --file desktop/pom.xml
