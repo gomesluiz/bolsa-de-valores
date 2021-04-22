@@ -36,6 +36,6 @@ jobs:
         - name: Deploy Release
           run: |
             #mvn -B versions:set -DnewVersion=$GITHUB_SHA -DgenerateBackupPoms=false --file desktop/pom.xml
-            mvn -B release:prepare release:perform
+            mvn -B release:prepare release:perform --file desktop/pom.xml
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
