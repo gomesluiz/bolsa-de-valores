@@ -3,7 +3,7 @@
   <groupId>br.pucpcaldas.bolsa</groupId>
   <artifactId>desktop</artifactId>
   <packaging>jar</packaging>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
   <name>desktop</name>
   <url>http://maven.apache.org</url>
 
@@ -37,7 +37,7 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/gomesluiz/bolsa-de-valores.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>desktop-1.2</tag>
   </scm>
 
   <distributionManagement>
