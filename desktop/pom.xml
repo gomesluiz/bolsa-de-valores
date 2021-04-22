@@ -3,7 +3,7 @@
   <groupId>br.pucpcaldas.bolsa</groupId>
   <artifactId>desktop</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>desktop</name>
   <url>http://maven.apache.org</url>
 
