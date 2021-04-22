@@ -6,18 +6,20 @@
   <version>1.0</version>
   <name>desktop</name>
   <url>http://maven.apache.org</url>
-  
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <!-- insert -->
+
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <!-- insert -->
+    <project.scm.id>github</project.scm.id>
   </properties>
 
   <dependencies>
 
-    <dependency>  
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
@@ -31,42 +33,11 @@
 
 
   </dependencies>
-  
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <!-- modify -->
-        <artifactId>maven-assembly-plugin</artifactId>
-        <!-- remove 
-        <configuration>
-          <release>11</release>
-        </configuration>
-        -->
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-            <configuration>
-              <archive>
-                <manifest>
-                  <mainClass>App</mainClass>
-                </manifest>
-              </archive>
-              <descriptorRefs>
-                <descriptorRef>jar-with-dependencies</descriptorRef>
-              </descriptorRefs>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 
-  
+  <scm>
+    <developerConnection>scm:git:https://github.com/ajavageek/renamer-swing.git</developerConnection>
+  </scm>
+
   <distributionManagement>
     <repository>
       <id>github</id>
@@ -75,17 +46,5 @@
     </repository>
   </distributionManagement>
 
-  <!-- 
-  <distributionManagement>
-    <repository>
-      <id>oss.sonatype.org</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>github</id>
-      <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/gomesluiz/bolsa-de-valores-starter</url>
-    </snapshotRepository>
-  </distributionManagement>
-  -->
+
 </project>
