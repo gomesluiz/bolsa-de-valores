@@ -35,7 +35,7 @@
   </dependencies>
 
   <scm>
-    <developerConnection>scm:git:https://github.com/ajavageek/renamer-swing.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/gomesluiz/bolsa-de-valores.git</developerConnection>
   </scm>
 
   <distributionManagement>
