@@ -4,7 +4,7 @@
   <artifactId>desktop</artifactId>
   <packaging>jar</packaging>
   <!-- colocar snapshot -->
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <name>desktop</name>
   <url>http://maven.apache.org</url>
 
@@ -39,7 +39,7 @@
   <!-- modify -->
   <scm>
     <developerConnection>scm:git:https://github.com/gomesluiz/bolsa-de-valores.git</developerConnection>
-    <tag>desktop-1.4</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
