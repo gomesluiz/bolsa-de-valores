@@ -33,6 +33,7 @@ jobs:
           with:
             java-version: 11
             distribution: 'adopt'
+        # modified
         - name: Configure Git user
           run: |
             git config user.email "gomes.luiz@gmai.com"

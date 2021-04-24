@@ -3,6 +3,7 @@
   <groupId>br.pucpcaldas.bolsa</groupId>
   <artifactId>desktop</artifactId>
   <packaging>jar</packaging>
+  <!-- colocar snapshot -->
   <version>1.4-SNAPSHOT</version>
   <name>desktop</name>
   <url>http://maven.apache.org</url>
@@ -35,6 +36,7 @@
 
   </dependencies>
 
+  <!-- modify -->
   <scm>
     <developerConnection>scm:git:https://github.com/gomesluiz/bolsa-de-valores.git</developerConnection>
     <tag>HEAD</tag>
